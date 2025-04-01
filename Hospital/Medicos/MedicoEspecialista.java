@@ -1,17 +1,16 @@
 package Hospital.Medicos;
 
-public class Nutriologo extends MedicoGeneral{
+public class MedicoEspecialista extends MedicoGeneral{
 
     private String CedPEsp;
     private String NomEsp;
     private String CveEsp;
 
-    public Nutriologo(String cveMG, String nombre, String cedProfMG, String cedPEsp, String nomEsp, String cveEsp) {
+    public MedicoEspecialista(String cveMG, String nombre, String cedProfMG, String cedPEsp, String nomEsp, String cveEsp) {
         super(cveMG, nombre, cedProfMG);
         CedPEsp = cedPEsp;
         NomEsp = nomEsp;
         CveEsp = cveEsp;
-
     }
 
     public String getCedPEsp() {
@@ -40,11 +39,10 @@ public class Nutriologo extends MedicoGeneral{
 
     @Override
     public String toString() {
-        return "Trauma{" +
+        return "Cirujano{" +
                 "CedPEsp='" + CedPEsp + '\'' +
                 ", NomEsp='" + NomEsp + '\'' +
                 ", CveEsp='" + CveEsp + '\'' +
                 '}';
     }
-
 }
